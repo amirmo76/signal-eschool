@@ -22,6 +22,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   font-size: 1.6rem;
+  direction: rtl;
 }
 
 code {
