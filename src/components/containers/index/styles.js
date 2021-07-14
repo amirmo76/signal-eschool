@@ -7,15 +7,16 @@ export const Wrapper = styled.div`
   min-height: 100vh;
 
   .hero {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 10rem;
     transform: translateY(-50%);
+    width: 57rem;
     z-index: 2;
   }
 
   .circle {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
@@ -28,7 +29,7 @@ export const RightWrapper = styled.div`
   position: relative;
   z-index: 3;
   margin-right: 7.5rem;
-  padding-top: 7.5rem;
+  padding: 5rem 0;
 `;
 
 export const Header = styled.header`
@@ -43,13 +44,7 @@ export const Description = styled.p`
   font-weight: 500;
 `;
 
-export const LoginForm = styled.form`
-  & > *:not(:last-child) {
-    margin-bottom: 2.5rem;
-  }
-`;
-
-export const LoginOptions = styled.div`
+export const Options = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;

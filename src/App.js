@@ -6,17 +6,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact>
-            <HomepageContainer />
-          </Route>
           <Route path="/panel" exact>
             <div>Panel</div>
           </Route>
           <Route path="/panel/dashboard" exact>
             <div>Dashboard</div>
           </Route>
-          <Route>
-            <div>404</div>
+          <Route path="/">
+            <HomepageContainer />
           </Route>
         </Switch>
       </BrowserRouter>
