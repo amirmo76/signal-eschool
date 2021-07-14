@@ -42,3 +42,34 @@ export const Description = styled.p`
   direction: rtl;
   font-weight: 500;
 `;
+
+export const LoginForm = styled.form`
+  & > *:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+`;
+
+export const LoginOptions = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  color: ${colors.primary_2};
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  .signup {
+    display: flex;
+    .link {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .link {
+    color: ${colors.grey};
+    cursor: pointer;
+
+    &:hover {
+      color: ${colors.secondary_2};
+    }
+  }
+`;

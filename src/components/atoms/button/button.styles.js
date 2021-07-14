@@ -10,7 +10,7 @@ export const StyledButton = styled.button`
   font-family: inherit;
   font-size: 2rem;
   border: none;
-  background-color: ${colors.secondary};
+  background-color: ${colors.secondary_2};
   color: ${colors.white};
   border-radius: 1rem;
   padding: 2rem 10rem;
