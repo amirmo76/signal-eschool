@@ -2,8 +2,8 @@ import styled from "styled-components";
 import colors from "../../../statics/values/colors.json";
 
 export const StyledNav = styled.nav`
-  width: 100vw;
-  padding: 2.5rem 3rem;
+  width: 100%;
+  padding: 2.5rem 0;
   color: ${colors.primary};
   display: flex;
   align-items: center;

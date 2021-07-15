@@ -1,27 +1,33 @@
 import { Switch, BrowserRouter, Route, useRouteMatch } from "react-router-dom";
+
 import Toolbar from "../../organisms/toolbar";
+import RightSidebar from "../../organisms/right-sidebar";
+import Footer from "../../atoms/footer";
+
+import { Wrapper } from "./styles";
 
 function Index() {
   const { path } = useRouteMatch();
   return (
-    <div>
-      <Toolbar />
-      <div>rightside</div>
+    <Wrapper>
+      <Toolbar className="toolbar" />
+      <RightSidebar />
 
-      <BrowserRouter>
+      <div>
         <Switch>
           <Route path={`${path}/content`}>content</Route>
           <Route path={`${path}/assignment`}>assignment</Route>
           <Route path={`${path}/project`}>project</Route>
           <Route path={`${path}/quiz`}>quiz</Route>
           <Route path={`${path}/grades`}>grades</Route>
-          <Route path={path}>dashboard</Route>
+          <Route path={`${path}/dashboard`}>dashboard</Route>
+          <Route>404</Route>
         </Switch>
-      </BrowserRouter>
+      </div>
 
       <div>leftside</div>
-      <div>footer</div>
-    </div>
+      <Footer className="footer" />
+    </Wrapper>
   );
 }
 

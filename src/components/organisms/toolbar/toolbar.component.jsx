@@ -14,14 +14,14 @@ import { ReactComponent as SettingsSVG } from "../../../statics/svgs/settings.sv
 import { ReactComponent as LogoutSVG } from "../../../statics/svgs/logout.svg";
 import faLang from "../../../statics/values/langs/fa.json";
 
-function Toolbar() {
+function Toolbar(props) {
   const [hasNotification, setHasNotification] = useState(false);
   const { handleSubmit, register } = useForm();
 
   const onSearchSubmit = (data) => console.log(data);
 
   return (
-    <StyledNav>
+    <StyledNav {...props}>
       <LogoSVG className="logo" />
       <Title>{faLang.main.title}</Title>
       <SearchWrapper onSubmit={handleSubmit(onSearchSubmit)}>
