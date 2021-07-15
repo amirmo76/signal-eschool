@@ -1,16 +1,14 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomepageContainer from "./components/containers/index";
+import PanelContainer from "./components/containers/panel";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path="/panel" exact>
-            <div>Panel</div>
-          </Route>
-          <Route path="/panel/dashboard" exact>
-            <div>Dashboard</div>
+          <Route path="/panel">
+            <PanelContainer />
           </Route>
           <Route path="/">
             <HomepageContainer />
