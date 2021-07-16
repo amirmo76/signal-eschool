@@ -1,4 +1,4 @@
-import { Switch, BrowserRouter, Route, useRouteMatch } from "react-router-dom";
+import { Switch, Route, useRouteMatch } from "react-router-dom";
 
 import Toolbar from "../../organisms/toolbar";
 import RightSidebar from "../../organisms/right-sidebar";

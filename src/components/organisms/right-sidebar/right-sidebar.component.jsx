@@ -1,10 +1,4 @@
-import {
-  useHistory,
-  Link,
-  BrowserRouter,
-  useRouteMatch,
-  useLocation,
-} from "react-router-dom";
+import { Link, useRouteMatch, useLocation } from "react-router-dom";
 
 import Card from "../../atoms/card";
 
