@@ -2,11 +2,15 @@ import styled, { css } from "styled-components";
 import colors from "../../../statics/values/colors.json";
 
 export const Wrapper = styled.div`
-  padding: 2.5rem 0;
+  padding: 4.5rem 0;
 `;
 
 export const ProfileWrapper = styled.div`
   font-weight: 500;
+
+  .avatar {
+    margin: -5rem auto 1.2rem;
+  }
 `;
 
 export const Navigation = styled.ul`

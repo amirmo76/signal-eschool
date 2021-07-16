@@ -1,6 +1,7 @@
 import { Link, useRouteMatch, useLocation } from "react-router-dom";
 
 import Card from "../../atoms/card";
+import Avatar from "../../atoms/avatar";
 
 import dummyData from "./dummy.data.json";
 import items from "./items";
@@ -22,6 +23,7 @@ function RightSidebar() {
     <Wrapper>
       <ProfileWrapper>
         <Card>
+          <Avatar className="avatar" image={dummyData.user.image} />
           <Fullname>{dummyData.user.name}</Fullname>
           <ClassroomCode>{`${faLang.class_code} ${dummyData.user.class.id}`}</ClassroomCode>
         </Card>
