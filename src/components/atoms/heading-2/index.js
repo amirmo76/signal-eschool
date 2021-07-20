@@ -1,1 +1,1 @@
-export { default } from "./heading-1.component";
+export { default } from './heading-2.component';
