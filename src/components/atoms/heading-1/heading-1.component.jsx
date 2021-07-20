@@ -1,7 +1,7 @@
-import { StyledHeading } from "./heading-1.styles";
+import { StyledHeading } from './heading-1.styles';
 
-function Heading({ children }) {
-  return <StyledHeading>{children}</StyledHeading>;
+function Heading({ children, ...otherProps }) {
+  return <StyledHeading {...otherProps}>{children}</StyledHeading>;
 }
 
 export default Heading;
