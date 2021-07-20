@@ -1,0 +1,28 @@
+{
+  "quick_access": [
+    {
+      "id": 0,
+      "type": "content",
+      "title": "تجزیه و سیستم",
+      "description": "تجزیه سیگنال با سری فوریه"
+    },
+    {
+      "id": 1,
+      "type": "assignment",
+      "title": "تکلیف شماره اول",
+      "description": "مهلت: سیزدهم خرداد 1400"
+    },
+    {
+      "id": 2,
+      "type": "quiz",
+      "title": "کوئیز شماره سوم",
+      "description": "از 10:00 تا 10:30 ق.ظ"
+    },
+    {
+      "id": 3,
+      "type": "assignment",
+      "title": "پروژه شماره اول",
+      "description": "مهلت: بیستم خرداد 1400"
+    }
+  ]
+}

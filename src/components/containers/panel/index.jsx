@@ -1,10 +1,12 @@
-import { Switch, Route, useRouteMatch } from "react-router-dom";
+import { Switch, Route, useRouteMatch } from 'react-router-dom';
 
-import Toolbar from "../../organisms/toolbar";
-import RightSidebar from "../../organisms/right-sidebar";
-import Footer from "../../atoms/footer";
+import DashboardContainer from '../../containers/dashboard';
 
-import { Wrapper } from "./styles";
+import Toolbar from '../../organisms/toolbar';
+import RightSidebar from '../../organisms/right-sidebar';
+import Footer from '../../atoms/footer';
+
+import { Wrapper } from './styles';
 
 function Index() {
   const { path } = useRouteMatch();
@@ -20,7 +22,7 @@ function Index() {
           <Route path={`${path}/project`}>project</Route>
           <Route path={`${path}/quiz`}>quiz</Route>
           <Route path={`${path}/grades`}>grades</Route>
-          <Route path={`${path}/dashboard`}>dashboard</Route>
+          <Route path={`${path}/dashboard`} component={DashboardContainer} />
           <Route>404</Route>
         </Switch>
       </div>
