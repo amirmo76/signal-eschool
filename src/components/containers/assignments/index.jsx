@@ -4,6 +4,7 @@ import Section from '../../molecules/section';
 import Item from '../../molecules/item';
 import List from '../../atoms/list';
 import { past, current } from './dummy.data.json';
+import { Link } from 'react-router-dom';
 
 function Index() {
   return (
@@ -12,14 +13,18 @@ function Index() {
         <Section title={faLang.current_assignments}>
           <List
             items={current.map((cur) => (
-              <Item {...cur} />
+              <Link to={`/panel/assignment/${cur.id}`}>
+                <Item {...cur} />
+              </Link>
             ))}
           />
         </Section>
         <Section title={faLang.past_assignments}>
           <List
             items={past.map((cur) => (
-              <Item {...cur} />
+              <Link to={`/panel/assignment/${cur.id}`}>
+                <Item {...cur} />
+              </Link>
             ))}
           />
         </Section>

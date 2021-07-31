@@ -13,6 +13,10 @@ export const Wrapper = styled.ul`
 export const ListItem = styled.li`
   display: flex;
   align-items: center;
+
+  & > *:last-child {
+    flex-grow: 1;
+  }
 `;
 
 export const Index = styled.div`

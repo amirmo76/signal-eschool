@@ -1,4 +1,4 @@
-import { StyledButton } from "./icon-button.styles";
+import { StyledButton } from './icon-button.styles';
 
 function IconButton({ Icon, bgLight, ...otherProps }) {
   return (

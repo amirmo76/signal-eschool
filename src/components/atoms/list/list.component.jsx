@@ -4,7 +4,7 @@ function List({ items }) {
   return (
     <Wrapper>
       {items.map((cur, i) => (
-        <ListItem>
+        <ListItem key={i}>
           <Index>{i + 1}</Index>
           {cur}
         </ListItem>

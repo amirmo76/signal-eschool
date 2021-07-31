@@ -3,6 +3,7 @@ import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import DashboardContainer from '../../containers/dashboard';
 import ContentnsContainer from '../../containers/contents';
 import AssignmentsContainer from '../../containers/assignments';
+import AssignmentContainer from '../../containers/assignment';
 import ProjectsContainer from '../../containers/projects';
 import QuizesContainer from '../../containers/quizes';
 
@@ -22,6 +23,10 @@ function Index() {
       <div>
         <Switch>
           <Route path={`${path}/content`} component={ContentnsContainer} />
+          <Route
+            path={`${path}/assignment/:id`}
+            component={AssignmentContainer}
+          />
           <Route path={`${path}/assignment`} component={AssignmentsContainer} />
           <Route path={`${path}/project`} component={ProjectsContainer} />
           <Route path={`${path}/quiz`} component={QuizesContainer} />

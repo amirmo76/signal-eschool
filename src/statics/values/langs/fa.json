@@ -40,5 +40,13 @@
   "projects_progress": "نمودار پیشرفت پروژه ها",
   "past_quizes": "کوئیزهای جاری",
   "current_quizes": "کوئیز های گذشته",
-  "quizes_progress": "نمودار پیشرفت کوئیزها"
+  "quizes_progress": "نمودار پیشرفت کوئیزها",
+  "status": "وضعیت",
+  "due": "مهلت تحویل",
+  "due_countdown": "زمان باقی مانده",
+  "grade": "نمره",
+  "active": "فعال",
+  "not_active": "غیر فعال",
+  "description": "توضیحات",
+  "attachments": "پیوست ها"
 }
