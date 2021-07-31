@@ -53,9 +53,26 @@ export const IconWrapper = styled.div`
 export const ContentWrapper = styled.div`
   flex-grow: 1;
   padding-top: 0.75rem;
+  position: relative;
 `;
 
 export const Description = styled.p`
   font-size: 1.2rem;
   font-weight: bold;
+`;
+
+export const Grade = styled.div`
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background-color: ${(props) => props.color};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: ${colors.white};
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
 `;

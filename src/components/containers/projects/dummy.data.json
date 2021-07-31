@@ -18,13 +18,21 @@
       "id": 0,
       "type": "project",
       "title": "پروژه شماره اول",
-      "description": "مهلت: بیستم خرداد 1400"
+      "description": "مهلت: بیستم خرداد 1400",
+      "grade": {
+        "max": 20,
+        "current": 20
+      }
     },
     {
       "id": 1,
       "type": "project",
       "title": "پروژه شماره اول",
-      "description": "مهلت: بیستم خرداد 1400"
+      "description": "مهلت: بیستم خرداد 1400",
+      "grade": {
+        "max": 50,
+        "current": 35
+      }
     },
     {
       "id": 2,

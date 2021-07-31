@@ -24,13 +24,21 @@
       "id": 1,
       "type": "quiz",
       "title": "کوئیز شماره سوم",
-      "description": "از 10:00 تا 10:30 ق.ظ"
+      "description": "از 10:00 تا 10:30 ق.ظ",
+      "grade": {
+        "max": 100,
+        "current": 50
+      }
     },
     {
       "id": 2,
       "type": "quiz",
       "title": "کوئیز شماره سوم",
-      "description": "از 10:00 تا 10:30 ق.ظ"
+      "description": "از 10:00 تا 10:30 ق.ظ",
+      "grade": {
+        "max": 100,
+        "current": 100
+      }
     }
   ]
 }

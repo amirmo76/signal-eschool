@@ -3,14 +3,16 @@ import { ReactComponent as AssignmentSVG } from '../../../statics/svgs/assignmen
 import { ReactComponent as ProjectSVG } from '../../../statics/svgs/project.svg';
 import { ReactComponent as QuizSVG } from '../../../statics/svgs/quiz.svg';
 
+import { getGradeColor } from '../../../utils/grade';
+
 import Heading from '../../atoms/heading-3';
 import {
   Wrapper,
   IconWrapper,
   ContentWrapper,
   Description,
+  Grade,
 } from './item.styles';
-import { useEffect } from 'react';
 
 export const TYPES = {
   CONTENT: 'content',
@@ -45,6 +47,11 @@ function Item({ title, description, type, grade }) {
       <ContentWrapper>
         <Heading className="heading">{title}</Heading>
         <Description>{description}</Description>
+        {grade && (
+          <Grade color={getGradeColor(grade.max, grade.current)}>
+            {grade.current}
+          </Grade>
+        )}
       </ContentWrapper>
     </Wrapper>
   );

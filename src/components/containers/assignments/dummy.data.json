@@ -18,19 +18,31 @@
       "id": 0,
       "type": "assignment",
       "title": "تکلیف شماره اول",
-      "description": "مهلت: سیزدهم خرداد 1400"
+      "description": "مهلت: سیزدهم خرداد 1400",
+      "grade": {
+        "max": 100,
+        "current": 50
+      }
     },
     {
       "id": 1,
       "type": "assignment",
       "title": "تکلیف شماره اول",
-      "description": "مهلت: سیزدهم خرداد 1400"
+      "description": "مهلت: سیزدهم خرداد 1400",
+      "grade": {
+        "max": 100,
+        "current": 90
+      }
     },
     {
       "id": 2,
       "type": "assignment",
       "title": "تکلیف شماره اول",
-      "description": "مهلت: سیزدهم خرداد 1400"
+      "description": "مهلت: سیزدهم خرداد 1400",
+      "grade": {
+        "max": 100,
+        "current": 20
+      }
     }
   ]
 }
