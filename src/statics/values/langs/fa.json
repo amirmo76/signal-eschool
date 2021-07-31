@@ -30,5 +30,15 @@
   "grades": "نمرات من",
   "footer": "تمامی حقوق مادی و معنوی این سایت محفوظ می باشد. © تابستان 1400",
   "grades_progress": "پیشرفت نمرات",
-  "quick_access": "دسترسی سریع"
+  "quick_access": "دسترسی سریع",
+  "contents_title": "محتوای درس",
+  "current_assignments": "تکالیف جاری",
+  "past_assignments": "تکالیف گذشته",
+  "assignments_progress": "نمودار پیشرفت تکالیف",
+  "past_projects": "پروژه های گذشته",
+  "current_projects": "پروژه های جاری",
+  "projects_progress": "نمودار پیشرفت پروژه ها",
+  "past_quizes": "کوئیزهای جاری",
+  "current_quizes": "کوئیز های گذشته",
+  "quizes_progress": "نمودار پیشرفت کوئیزها"
 }

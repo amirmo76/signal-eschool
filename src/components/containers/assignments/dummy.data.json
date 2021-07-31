@@ -1,0 +1,36 @@
+{
+  "current": [
+    {
+      "id": 0,
+      "type": "assignment",
+      "title": "تکلیف شماره اول",
+      "description": "مهلت: سیزدهم خرداد 1400"
+    },
+    {
+      "id": 1,
+      "type": "assignment",
+      "title": "تکلیف شماره اول",
+      "description": "مهلت: سیزدهم خرداد 1400"
+    }
+  ],
+  "past": [
+    {
+      "id": 0,
+      "type": "assignment",
+      "title": "تکلیف شماره اول",
+      "description": "مهلت: سیزدهم خرداد 1400"
+    },
+    {
+      "id": 1,
+      "type": "assignment",
+      "title": "تکلیف شماره اول",
+      "description": "مهلت: سیزدهم خرداد 1400"
+    },
+    {
+      "id": 2,
+      "type": "assignment",
+      "title": "تکلیف شماره اول",
+      "description": "مهلت: سیزدهم خرداد 1400"
+    }
+  ]
+}
