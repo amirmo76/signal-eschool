@@ -48,5 +48,11 @@
   "active": "فعال",
   "not_active": "غیر فعال",
   "description": "توضیحات",
-  "attachments": "پیوست ها"
+  "attachments": "پیوست ها",
+  "upload": "بارگذاری فایل",
+  "submission_list": "لیست تحویل",
+  "file_type": "نوع فایل درخواستی",
+  "allowed_submission_count": "دفعات مجاز برای تحویل",
+  "submissions_count": "دفعات تحویل",
+  "infinite": "نامحدود"
 }

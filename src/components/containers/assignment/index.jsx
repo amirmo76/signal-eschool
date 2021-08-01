@@ -5,6 +5,7 @@ import InfoList from '../../atoms/info-list';
 import RichText from '../../atoms/rich-text';
 import List from '../../atoms/list';
 import Attachment from '../../molecules/attachment';
+import SubmissionCard from '../../organisms/submission-card';
 import assignmentData from './dummy.data.json';
 
 import faLang from '../../../statics/values/langs/fa.json';
@@ -54,6 +55,15 @@ function Index() {
               <Attachment {...cur} />
             ))}
           />
+        </Section>
+        <Section title={faLang.submission_list}>
+          {
+            <List
+              items={assignment.submissions.map((cur) => (
+                <SubmissionCard {...cur} />
+              ))}
+            />
+          }
         </Section>
       </Card>
     </div>
