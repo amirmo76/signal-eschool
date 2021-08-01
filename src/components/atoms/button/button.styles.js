@@ -1,9 +1,19 @@
-import styled, { css } from "styled-components";
-import colors from "../../../statics/values/colors.json";
-import HexToRgb from "../../../utils/hex-to-rgb";
+import styled, { css } from 'styled-components';
+import colors from '../../../statics/values/colors.json';
+import HexToRgb from '../../../utils/hex-to-rgb';
 
 const expandedCSS = css`
   width: 100%;
+`;
+
+const disabledCSS = css`
+  cursor: default;
+  background-color: ${colors.grey};
+
+  &:hover {
+    background-color: ${colors.grey};
+    box-shadow: none;
+  }
 `;
 
 export const StyledButton = styled.button`
@@ -28,4 +38,5 @@ export const StyledButton = styled.button`
   }
 
   ${(props) => props.expanded && expandedCSS};
+  ${(props) => props.disabled && disabledCSS};
 `;
