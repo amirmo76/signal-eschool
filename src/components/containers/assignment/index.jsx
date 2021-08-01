@@ -34,7 +34,11 @@ function Index() {
       {
         id: 2,
         title: <span>{faLang.grade}</span>,
-        value: <span>{assignment.grade.max}</span>,
+        value: (
+          <span>{`${
+            assignment.grade.extra ? `(${assignment.grade.extra}+) ` : ''
+          }${assignment.grade.max - (assignment.grade.extra || 0)}`}</span>
+        ),
       },
     ],
     [assignment]
