@@ -7,6 +7,7 @@ import AssignmentContainer from '../../containers/assignment';
 import ProjectsContainer from '../../containers/projects';
 import QuizesContainer from '../../containers/quizes';
 import EditProfileContainer from '../../containers/edit-profile';
+import EditPasswordContainer from '../../containers/edit-password';
 
 import Toolbar from '../../organisms/toolbar';
 import RightSidebar from '../../organisms/right-sidebar';
@@ -34,6 +35,7 @@ function Index() {
           <Route path={`${path}/grades`}>grades</Route>
           <Route path={`${path}/dashboard`} component={DashboardContainer} />
           <Route path={`${path}/edit`} component={EditProfileContainer} />
+          <Route path={`${path}/password`} component={EditPasswordContainer} />
           <Route>404</Route>
         </Switch>
       </div>
