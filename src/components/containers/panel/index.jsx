@@ -7,6 +7,7 @@ import AssignmentsContainer from '../../containers/assignments';
 import AssignmentContainer from '../../containers/assignment';
 import ProjectsContainer from '../../containers/projects';
 import ProjectContainer from '../../containers/project';
+import QuizContainer from '../../containers/quiz';
 import QuizesContainer from '../../containers/quizes';
 import EditProfileContainer from '../../containers/edit-profile';
 import EditPasswordContainer from '../../containers/edit-password';
@@ -35,6 +36,7 @@ function Index() {
           <Route path={`${path}/assignment`} component={AssignmentsContainer} />
           <Route path={`${path}/project/:id`} component={ProjectContainer} />
           <Route path={`${path}/project`} component={ProjectsContainer} />
+          <Route path={`${path}/quiz/:id`} component={QuizContainer} />
           <Route path={`${path}/quiz`} component={QuizesContainer} />
           <Route path={`${path}/grades`}>grades</Route>
           <Route path={`${path}/dashboard`} component={DashboardContainer} />

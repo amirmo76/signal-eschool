@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import faLang from '../../../statics/values/langs/fa.json';
 import Card from '../../atoms/card';
 import Section from '../../molecules/section';
@@ -12,14 +13,18 @@ function Index() {
         <Section title={faLang.current_quizes}>
           <List
             items={current.map((cur) => (
-              <Item {...cur} />
+              <Link to={`/panel/quiz/${cur.id}`}>
+                <Item {...cur} />
+              </Link>
             ))}
           />
         </Section>
         <Section title={faLang.past_quizes}>
           <List
             items={past.map((cur) => (
-              <Item {...cur} />
+              <Link to={`/panel/quiz/${cur.id}`}>
+                <Item {...cur} />
+              </Link>
             ))}
           />
         </Section>
