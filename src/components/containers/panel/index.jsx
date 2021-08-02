@@ -2,6 +2,7 @@ import { Switch, Route, useRouteMatch } from 'react-router-dom';
 
 import DashboardContainer from '../../containers/dashboard';
 import ContentnsContainer from '../../containers/contents';
+import ContentnContainer from '../../containers/content';
 import AssignmentsContainer from '../../containers/assignments';
 import AssignmentContainer from '../../containers/assignment';
 import ProjectsContainer from '../../containers/projects';
@@ -24,6 +25,7 @@ function Index() {
 
       <div>
         <Switch>
+          <Route path={`${path}/content/:id`} component={ContentnContainer} />
           <Route path={`${path}/content`} component={ContentnsContainer} />
           <Route
             path={`${path}/assignment/:id`}

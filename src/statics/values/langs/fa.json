@@ -62,5 +62,6 @@
   "phone": "شماره همراه",
   "update": "بروزرسانی",
   "change_password": "ویرایش رمز عبور",
-  "new_password": "رمز عبور جدید"
+  "new_password": "رمز عبور جدید",
+  "related_assignments": "تکالیف مربوطه"
 }
