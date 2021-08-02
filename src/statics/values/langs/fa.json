@@ -54,5 +54,6 @@
   "file_type": "نوع فایل درخواستی",
   "allowed_submission_count": "دفعات مجاز برای تحویل",
   "submissions_count": "دفعات تحویل",
-  "infinite": "نامحدود"
+  "infinite": "نامحدود",
+  "times": "مرتبه"
 }

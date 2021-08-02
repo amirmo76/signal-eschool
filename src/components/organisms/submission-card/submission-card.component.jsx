@@ -9,6 +9,7 @@ import {
   Description,
   HeadingWrapper,
   ListWrapper,
+  SubmissionHistoryButton,
 } from './submission-card.styles';
 
 import faLang from '../../../statics/values/langs/fa.json';
@@ -49,7 +50,11 @@ function SubmissionCard({
       {
         id: 4,
         title: <span>{faLang.submissions_count}</span>,
-        value: <span>{submitted}</span>,
+        value: (
+          <SubmissionHistoryButton
+            disabled={!submitted}
+          >{`${submitted} ${faLang.times}`}</SubmissionHistoryButton>
+        ),
       },
     ];
   }, [types, grade, count, submitted, due]);
