@@ -61,5 +61,6 @@
   "last_name": "نام خانوادگی",
   "phone": "شماره همراه",
   "update": "بروزرسانی",
-  "change_password": "ویرایش رمز عبور"
+  "change_password": "ویرایش رمز عبور",
+  "new_password": "رمز عبور جدید"
 }
