@@ -56,5 +56,9 @@
   "submissions_count": "دفعات تحویل",
   "infinite": "نامحدود",
   "times": "مرتبه",
-  "my_info": "مشخصات من"
+  "my_info": "مشخصات من",
+  "name": "نام",
+  "last_name": "نام خانوادگی",
+  "phone": "شماره همراه",
+  "update": "بروزرسانی"
 }
