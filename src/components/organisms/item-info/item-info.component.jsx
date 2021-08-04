@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import dayjs from 'dayjs';
 import InfoList from '../../atoms/info-list';
 import { getGradeColor } from '../../../utils/grade';
 
@@ -21,7 +22,14 @@ function ItemInfo({ status, due, grade }) {
     items.push({
       id: 1,
       title: <span>{faLang.due}</span>,
-      value: <span>{due.text}</span>,
+      value: (
+        <span>
+          {dayjs(due)
+            .calendar('jalali')
+            .locale('fa')
+            .format('DD MMMM YYYY ساعت HH:mm:ss')}
+        </span>
+      ),
     });
     // add max grade
     items.push({
