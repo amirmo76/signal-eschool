@@ -9,3 +9,7 @@ export const BorderCSS = css`
 export const ShadowCSS = css`
   box-shadow: rgba(${hexToRgb(colors.primary)}, 0.23) 0 1.5rem 2.5rem;
 `;
+
+export const SidebarCSS = css`
+  padding: 4.5rem 0;
+`;

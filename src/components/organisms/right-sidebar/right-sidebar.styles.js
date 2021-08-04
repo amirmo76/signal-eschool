@@ -1,8 +1,9 @@
-import styled, { css } from "styled-components";
-import colors from "../../../statics/values/colors.json";
+import styled, { css } from 'styled-components';
+import colors from '../../../statics/values/colors.json';
+import { SidebarCSS } from '../../../statics/styles/common.styles';
 
 export const Wrapper = styled.div`
-  padding: 4.5rem 0;
+  ${SidebarCSS};
 `;
 
 export const ProfileWrapper = styled.div`
